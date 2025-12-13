@@ -24,6 +24,29 @@
       line-height: 1.6;
     }
 
+    /* PROFILE IMAGE STYLES */
+    .profile-wrap {
+      width: 170px;
+      height: 170px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      padding: 5px;
+      transition: transform 0.4s ease;
+    }
+
+    .profile-wrap:hover {
+      transform: scale(1.05);
+    }
+
+    .profile-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      background: white;
+    }
+
     /* NAVIGATION */
     nav {
       position: fixed;
@@ -77,7 +100,7 @@
     header {
       background: linear-gradient(135deg, var(--primary), var(--accent));
       color: var(--light);
-      padding: 120px 20px 80px;
+      padding: 130px 20px 90px;
       text-align: center;
     }
 
@@ -120,7 +143,7 @@
 
     .about {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 40px;
       align-items: center;
     }
@@ -151,7 +174,6 @@
       font-size: 0.9rem;
     }
 
-    /* MOBILE STYLES */
     @media (max-width: 768px) {
       .nav-links {
         position: absolute;
@@ -169,10 +191,6 @@
 
       .nav-links.active {
         display: flex;
-      }
-
-      .nav-links a {
-        font-size: 1rem;
       }
 
       .menu-toggle {
@@ -201,23 +219,6 @@
         padding: 60px 8%;
       }
     }
-
-      .nav-links.active {
-        display: flex;
-      }
-
-      .menu-toggle {
-        display: block;
-      }
-
-      header h1 {
-        font-size: 2.2rem;
-      }
-
-      section {
-        padding: 60px 8%;
-      }
-    }
   </style></head>
 <body>  <!-- NAVIGATION -->  <nav>
     <div class="nav-container">
@@ -232,6 +233,9 @@
       </div>
     </div>
   </nav>  <div style="height:80px"></div>  <!-- HERO SECTION -->  <header id="home">
+    <div class="profile-wrap">
+      <img src="profile.jpg" alt="Mary Ann Manguruban" class="profile-img" />
+    </div>
     <h1>Hi, I'm Mary Ann Manguruban</h1>
     <p>Your go-to Virtual Assistant & Social Media Manager — helping businesses grow with reliable virtual support, creative visuals, and efficient admin solutions.</p>
     <a href="#contact" class="btn">Hire Me</a>
@@ -240,6 +244,11 @@
       <h2>About Me</h2>
     </div>
     <div class="about">
+      <div style="text-align:center;">
+        <div class="profile-wrap" style="margin-bottom:25px;">
+          <img src="profile.jpg" alt="Mary Ann Manguruban" class="profile-img" />
+        </div>
+      </div>
       <div class="card">
         <p>I am a multi-skilled Virtual Assistant with experience in social media management, administrative support, email handling, file organization, and data entry. I also specialize in Canva design to help brands look polished and professional online.</p>
         <p>With years of supporting busy professionals, I bring efficiency, creativity, and reliability to every project.</p>
@@ -299,7 +308,7 @@
   </div>
 </div>
 
-  </section>  <!-- EDUCATION & CERTIFICATES -->
+  </section>  <!-- EDUCATION & CERTIFICATES -->author's
 
   <section>
     <div class="section-title">
