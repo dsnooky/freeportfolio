@@ -1,49 +1,226 @@
-<!-- =========================
-MULTI-PAGE PORTFOLIO SET
-Color Theme: Feminine Pastel Pink & Lilac
-Font: Poppins
-Pages Included:
-1. index.html (Home)
-2. services.html (Services)
-3. certificates.html (Certificates)
-4. contact.html (Contact)
-========================= --><!-- =========================
-index.html
-========================= --><!DOCTYPE html><html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mary Ann Manguruban | Virtual Assistant</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-    body{background:#fff1f7;color:#333}
-    header{background:linear-gradient(135deg,#f9a8d4,#e9d5ff);padding:70px 20px;text-align:center;color:#fff}
-    header h1{font-size:2.6rem}
-    nav{background:#fff;padding:15px;display:flex;justify-content:center;gap:25px;box-shadow:0 4px 10px rgba(0,0,0,.05)}
-    nav a{color:#db2777;font-weight:500;text-decoration:none}
-    section{max-width:1100px;margin:auto;padding:70px 20px}
-    .card{background:#fff;padding:30px;border-radius:18px;box-shadow:0 10px 25px rgba(0,0,0,.06)}
-    .btn{display:inline-block;margin-top:25px;padding:14px 32px;background:#ec4899;color:#fff;border-radius:30px;text-decoration:none}
-    footer{text-align:center;padding:20px;background:#fbcfe8}
-  </style>
-</head>
-<body><header>
-  <h1>Hi, I'm Mary Ann Manguruban</h1>
-  <p>Multi-Skilled Virtual Assistant & Social Media Manager</p>
-  <a class="btn" href="services.html">View My Services</a>
-</header><nav>
-  <a href="index.html">Home</a>
-  <a href="services.html">Services</a>
-  <a href="certificates.html">Certificates</a>
-  <a href="contact.html">Contact</a>
-  <a href="pricing.html">Pricing</a>
-  
-</nav><section>
-  <div class="card">
-    <h2>About Me</h2>
-    <p>I help business owners stay organized and visible online by providing reliable virtual assistance and creative social media support. I specialize in email management, data entry, calendar organization, and Canva-based designs that elevate brand identity.</p>
+  <title>Mary Ann Manguruban | Virtual Assistant & SMM</title>  <!-- Google Fonts -->  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">  <style>
+    :root {
+      --primary: #f3b6c8; /* pastel pink */
+      --secondary: #fbe4ec;
+      --dark: #3a3a3a;
+      --light: #ffffff;
+      --accent: #9b5de5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--secondary);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: var(--light);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: 15px auto;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 30px;
+      background: var(--light);
+      color: var(--accent);
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: var(--secondary);
+    }
+
+    section {
+      padding: 70px 10%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 2.2rem;
+      color: var(--accent);
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .card {
+      background: var(--light);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .skill-box {
+      background: var(--light);
+      padding: 25px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+    }
+
+    .experience {
+      display: grid;
+      gap: 25px;
+    }
+
+    .exp-item {
+      background: var(--light);
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+    }
+
+    .exp-item h3 {
+      color: var(--accent);
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    footer {
+      background: var(--dark);
+      color: var(--light);
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9rem;
+    }
+  </style></head>
+<body>  <!-- HERO SECTION -->  <header>
+    <h1>Hi, I'm Mary Ann Manguruban</h1>
+    <p>Your go-to Virtual Assistant & Social Media Manager — helping businesses grow with reliable virtual support, creative visuals, and efficient admin solutions.</p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </header>  <!-- ABOUT SECTION -->  <section>
+    <div class="section-title">
+      <h2>About Me</h2>
+    </div>
+    <div class="about">
+      <div class="card">
+        <p>I am a multi-skilled Virtual Assistant with experience in social media management, administrative support, email handling, file organization, and data entry. I also specialize in Canva design to help brands look polished and professional online.</p>
+        <p>With years of supporting busy professionals, I bring efficiency, creativity, and reliability to every project.</p>
+      </div>
+      <div class="card">
+        <h3>Quick Info</h3>
+        <p><strong>Email:</strong> mhean585@gmail.com</p>
+        <p><strong>Phone:</strong> +63 908 585 9266</p>
+        <p><strong>Work Setup:</strong> Remote</p>
+        <p><strong>Tagline:</strong> “Helping businesses grow with reliable virtual support”</p>
+      </div>
+    </div>
+  </section>  <!-- SKILLS SECTION -->  <section>
+    <div class="section-title">
+      <h2>Skills & Expertise</h2>
+    </div>
+    <div class="skills">
+      <div class="skill-box">Social Media Management</div>
+      <div class="skill-box">Virtual Assistance</div>
+      <div class="skill-box">Email & Calendar Management</div>
+      <div class="skill-box">Data Entry & File Organization</div>
+      <div class="skill-box">Canva Graphic Design</div>
+      <div class="skill-box">Content Scheduling</div>
+      <div class="skill-box">Microsoft Word & Reports</div>
+    </div>
+  </section>  <!-- EXPERIENCE SECTION -->  <section>
+    <div class="section-title">
+      <h2>Work Experience</h2>
+    </div>
+    <div class="experience">
+      <div class="exp-item">
+        <h3>Social Media Manager / Virtual Assistant</h3>
+        <p><strong>Ananse Online</strong> | 2021 – 2025</p>
+        <ul>
+          <li>Managed Facebook and Instagram content</li>
+          <li>Scheduled posts to boost reach and engagement</li>
+          <li>Assisted with basic social media strategies</li>
+        </ul>
+      </div><div class="exp-item">
+    <h3>Office Secretary</h3>
+    <p><strong>Rosary For Life Philippines</strong> | June 2017 – May 2025</p>
+    <ul>
+      <li>Managed calendars and scheduled meetings</li>
+      <li>Handled emails, correspondence, and records</li>
+      <li>Prepared reports using Microsoft Word</li>
+    </ul>
   </div>
-</section><footer>© 2025 Mary Ann Manguruban</footer>
-</body>
+
+  <div class="exp-item">
+    <h3>Office Encoder</h3>
+    <p><strong>Your Best Virtual Assistant</strong> | 2007 – 2010</p>
+    <ul>
+      <li>Encoded and maintained digital records</li>
+      <li>Converted paper files into electronic formats</li>
+      <li>Generated office activity reports</li>
+    </ul>
+  </div>
+</div>
+
+  </section>  <!-- EDUCATION & CERTIFICATES -->author's
+
+  <section>
+    <div class="section-title">
+      <h2>Education & Certificates</h2>
+    </div>
+    <div class="skills">
+      <div class="card">Bachelor of Secondary Education (Major in English)<br><small>Perpetual Help College of Pangasinan</small></div>
+      <div class="card">General VA Mastery<br><small>AI Ready ASEAN (2024–2025)</small></div>
+      <div class="card">Hour of Code Session<br><small>2024–2025</small></div>
+    </div>
+  </section>  <!-- CONTACT SECTION -->  <section id="contact">
+    <div class="section-title">
+      <h2>Let’s Work Together</h2>
+    </div>
+    <div class="contact">
+      <p>Looking for a reliable Virtual Assistant or Social Media Manager?</p>
+      <p>Email me at <strong>mhean585@gmail.com</strong></p>
+      <a href="mailto:mhean585@gmail.com" class="btn">Contact Me</a>
+    </div>
+  </section>  <footer>
+    <p>© 2025 Mary Ann Manguruban | Virtual Assistant Portfolio</p>
+  </footer></body>
 </html>
