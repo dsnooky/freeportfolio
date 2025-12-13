@@ -132,11 +132,22 @@
       font-size: 0.9rem;
     }
   </style></head>
-<body>  <!-- HERO SECTION -->  <header>
+<body>  <!-- NAVIGATION -->  <nav style="position:fixed;top:0;left:0;width:100%;background:rgba(255,255,255,0.95);box-shadow:0 4px 15px rgba(0,0,0,0.08);z-index:1000;">
+    <div style="max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:15px 30px;">
+      <strong style="color:#9b5de5;font-size:1.1rem;">Mary Ann VA</strong>
+      <div style="display:flex;gap:25px;">
+        <a href="#home" style="text-decoration:none;color:#3a3a3a;font-weight:500;">Home</a>
+        <a href="#about" style="text-decoration:none;color:#3a3a3a;font-weight:500;">About</a>
+        <a href="#skills" style="text-decoration:none;color:#3a3a3a;font-weight:500;">Skills</a>
+        <a href="#experience" style="text-decoration:none;color:#3a3a3a;font-weight:500;">Experience</a>
+        <a href="#contact" style="text-decoration:none;color:#9b5de5;font-weight:600;">Contact</a>
+      </div>
+    </div>
+  </nav>  <div style="height:80px"></div>  <!-- HERO SECTION -->  <header id="home">
     <h1>Hi, I'm Mary Ann Manguruban</h1>
     <p>Your go-to Virtual Assistant & Social Media Manager — helping businesses grow with reliable virtual support, creative visuals, and efficient admin solutions.</p>
     <a href="#contact" class="btn">Hire Me</a>
-  </header>  <!-- ABOUT SECTION -->  <section>
+  </header>  <!-- ABOUT SECTION -->  <section id="about">
     <div class="section-title">
       <h2>About Me</h2>
     </div>
@@ -153,7 +164,7 @@
         <p><strong>Tagline:</strong> “Helping businesses grow with reliable virtual support”</p>
       </div>
     </div>
-  </section>  <!-- SKILLS SECTION -->  <section>
+  </section>  <!-- SKILLS SECTION -->  <section id="skills">
     <div class="section-title">
       <h2>Skills & Expertise</h2>
     </div>
@@ -166,7 +177,7 @@
       <div class="skill-box">Content Scheduling</div>
       <div class="skill-box">Microsoft Word & Reports</div>
     </div>
-  </section>  <!-- EXPERIENCE SECTION -->  <section>
+  </section>  <!-- EXPERIENCE SECTION -->  <section id="experience">
     <div class="section-title">
       <h2>Work Experience</h2>
     </div>
