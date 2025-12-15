@@ -1,111 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mary Ann Manguruban| Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mary Ann Manguruban | Resume</title>
 
-  <style>
-    :root {
-      --bg: #ffffff;
-      --section-bg: #f5f5f5;
-      --text: #1a1a1a;
-      --muted: #555555;
-      --accent: #4a90e2;
-      --line: #e0e0e0;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
+<style>
     body {
-      margin: 0;
-      padding: 30px;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f4f6;
+        margin: 0;
+        padding: 0;
+        color: #333;
     }
 
-    .resume {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px;
-      border-top: 5px solid var(--accent);
+    .container {
+        max-width: 900px;
+        margin: 30px auto;
+        background: #fff;
+        padding: 40px;
+        border-radius: 10px;
     }
 
-    /* Header */
-    .header h1 {
-      margin: 0;
-      font-size: 2.8rem;
-      color: var(--accent);
+    h1 {
+        margin: 0;
+        font-size: 32px;
+        color: #5b4db2;
     }
 
-    .header .role {
-      font-size: 1.3rem;
-      color: var(--muted);
-      margin-top: 4px;
+    h2 {
+        font-size: 18px;
+        margin-top: 40px;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 8px;
+        color: #5b4db2;
     }
 
-    .header .contact {
-      font-size: 0.95rem;
-      color: var(--muted);
-      margin-top: 8px;
+    h3 {
+        margin: 10px 0 5px;
+        font-size: 16px;
+        color: #222;
     }
 
-    /* Sections */
-    .section {
-      margin-top: 35px;
+    p {
+        margin: 5px 0;
+        line-height: 1.6;
+        font-size: 14px;
     }
 
-    .section h2 {
-      font-size: 1.4rem;
-      color: var(--accent);
-      border-bottom: 2px solid var(--line);
-      padding-bottom: 6px;
-      margin-bottom: 15px;
+    ul {
+        margin: 10px 0 0 18px;
+        padding: 0;
     }
 
-    .section p {
-      line-height: 1.6;
-      margin: 0 0 10px;
+    ul li {
+        font-size: 14px;
+        margin-bottom: 6px;
     }
 
-    /* Experience */
-    .job {
-      margin-bottom: 20px;
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .job h3 {
-      margin: 0;
-      font-size: 1.2rem;
+    .tag {
+        display: inline-block;
+        background: #ece9ff;
+        color: #5b4db2;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        margin-top: 8px;
     }
 
-    .job .meta {
-      font-size: 0.9rem;
-      color: var(--muted);
-      margin-bottom: 6px;
+    .contact {
+        font-size: 14px;
+        margin-top: 10px;
     }
 
-    .job ul {
-      padding-left: 18px;
-      margin: 0;
+    .two-col {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+        margin-top: 20px;
     }
 
-    .job li {
-      margin-bottom: 6px;
+    .skills span {
+        display: inline-block;
+        background: #f1f1f1;
+        padding: 6px 10px;
+        border-radius: 6px;
+        margin: 6px 6px 0 0;
+        font-size: 13px;
     }
 
-    /* Skills */
-    .skills {
-      background: var(--section-bg);
-      padding: 15px;
-      border-radius: 6px;
-      font-size: 0.95rem;
-    }
-
-    /* Footer */
     .footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 13px;
+        color: #777;
+    }
+
+    @media(max-width: 768px) {
+        .two-col {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <div>
+            <h1>Mary Ann Manguruban</h1>
+            <span class="tag">Multi-Skilled Virtual Assistant</span>
+            <p class="contact">
+                📧 rtheanh585@gmail.com<br>
+                📞 +639085859266<br>
+                📍 Remotely
+            </p>
+        </div>
+    </div>
+
+    <!-- SUMMARY -->
+    <h2>Professional Summary</h2>
+    <p>
+        Your go-to Social Media Manager / Virtual Assistant with years of experience supporting busy professionals.
+        Skilled in social media management, administrative support, and digital organization.
+        I bring efficiency, creativity, and reliability to every task.
+    </p>
+
+    <div class="two-col">
+
+        <!-- LEFT COLUMN -->
+        <div>
+
+            <h2>Work Experience</h2>
+
+            <h3>Social Media Manager / Virtual Assistant</h3>
+            <p><strong>Ananse Online</strong> | June 2017 – May 2025</p>
+            <ul>
+                <li>Managed and updated Facebook and Instagram content</li>
+                <li>Scheduled posts to improve reach and engagement</li>
+                <li>Assisted in creating and implementing basic social media strategies</li>
+            </ul>
+
+            <h3>Office Secretary</h3>
+            <p><strong>Perpetual Help College of Pangasinan</strong> | October 2009 – January 2010</p>
+            <ul>
+                <li>Organized calendars, meetings, and events</li>
+                <li>Handled email and fax correspondence</li>
+                <li>Prepared reports and maintained office records</li>
+            </ul>
+
+            <h3>Office Encoder</h3>
+            <p><strong>Rosary For Life Philippines</strong> | June 2007 – January 2009</p>
+            <ul>
+                <li>Entered and maintained accurate digital records</li>
+                <li>Converted paper files to electronic formats</li>
+                <li>Generated reports to monitor office activity</li>
+            </ul>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div>
+
+            <h2>Skills & Expertise</h2>
+            <div class="skills">
+                <span>Email Management</span>
+                <span>File Organization</span>
+                <span>Data Entry</span>
+                <span>Canva Design</span>
+                <span>VA Operations</span>
+                <span>Administrative Support</span>
+            </div>
+
+            <h2>Education</h2>
+            <p>
+                <strong>St. Vincent De Ferrer College of Camarin Caloocan</strong><br>
+                Bachelor of Secondary Education – Major in English<br>
+                2021 – 2025
+            </p>
+
+            <h2>Certificates</h2>
+            <p>
+                <strong>General VA Mastery</strong><br>
+                Your Best Virtual Assistant (2024–2025)
+            </p>
+            <p>
+                <strong>Hour of Code Session</strong><br>
+                AI Ready ASEAN (2024–2025)
+            </p>
+
+            <h2>Hobbies</h2>
+            <p>Reading • Designing • Video Editing</p>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        “Helping businesses grow with reliable virtual support.”
+    </div>
+
+</div>
+
+</body>
+</html>    .footer {
       margin-top: 40px;
       text-align: center;
       font-size: 0.9rem;
